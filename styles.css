@@ -1,0 +1,102 @@
+/*
+* Reset rules
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/** Rules for flex container */
+
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+/* Create three unequal columns that sits next to each other */
+.column {
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Right column */
+.column.side {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+/* Main column */
+.column.main {
+  -webkit-flex: 4;
+  -ms-flex: 4;
+  flex: 4;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+/**
+* Rules for header section
+*/
+
+/* Header main */
+
+header {
+  min-height: 40px;
+  background-color: blue;
+}
+
+/* Section Main */
+
+section {
+  min-height: 200px;
+  background-color: brown;
+}
+
+/* Aside main */
+
+aside {
+  min-height: 200px;
+  background-color: darkgreen;
+}
