@@ -10,12 +10,32 @@
     <!--Import CSS files-->
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Import Material Design Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import Material Iconify Icons -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 
 <body>
-    <header>Head</header>
+    <header class="row">
+        <div class="logo row">
+            <div class="menu-icon">
+                <span class="iconify" data-icon="mdi:menu"></span>
+            </div>
+            <div class="logo-img">
+                <img src="images/youtube-logo.png" alt="YouTube logo" />
+            </div>
+        </div>
+        <div class="search row">
+                <input placeholder=" Search" />
+                <a><span class="iconify icon-search" data-icon="mdi:search" data-inline="false"></span></a>
+                <a><span class="iconify icon-nav" data-icon="mdi:microphone" data-inline="false"></span></a>
+        </div>
+        <div class="social row">
+            <span class="iconify icon-nav" data-icon="mdi:video-plus" data-inline="false"></span>
+            <span class="iconify icon-nav" data-icon="mdi:apps" data-inline="false"></span>
+            <span class="iconify icon-nav" data-icon="mdi:bell" data-inline="false"></span>
+            <span class="iconify icon-nav" data-icon="mdi:account-circle" data-inline="false"></span>
+        </div>
+    </header>
     <div class="row">
         <section class="column main">Main section</section>
         <aside class="column side">Aside section</aside>
