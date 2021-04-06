@@ -48,7 +48,9 @@ table {
 }
 
 /** Rules for flex container */
-
+* {
+  font-family: "Open Sans", sans-serif;
+}
 .row {
   display: -webkit-flex;
   display: flex;
@@ -93,29 +95,36 @@ header {
 }
 
 .menu-icon {
-  margin: auto;
   padding: 15px;
 }
 
+/*Center items*/
 .logo-img,
-.search {
+.search,
+.menu-icon,
+.logo-img img {
   margin: auto;
 }
 
 .logo-img img {
   height: auto;
   width: 80px;
-  margin: auto;
 }
 
+/*Border gray*/
+.search,
+.search input {
+  border: 1px solid #d3d3d3;
+}
+
+/*Search bar*/
 .search {
   min-width: 40%;
   background-color: #f8f8f8;
-  border: 1px solid #d3d3d3;
   border-radius: 3px;
 }
 
-.search a{
+.search a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,7 +137,6 @@ header {
 .icon-search {
   color: rgb(156, 156, 156);
   font-size: 20px;
-  
 }
 
 .icon-nav {
@@ -145,21 +153,69 @@ header {
   font-weight: 400;
   line-height: 24px;
   min-width: 90%;
-  border-right: 1px solid #d3d3d3;
+}
+
+/*required margin for top nav display */
+section,
+aside {
+  padding: 30px 0;
+  margin-top: 70px;
+  min-height: 1200px;
 }
 
 /* Section Main */
-
 section {
-  margin: 70px 0;
-  min-height: 1200px;
-  background-color: brown;
+  background-color: #f9f9f9;
+}
+
+/*Main*/
+iframe {
+  width: 853px;
+  height: 480px;
+  display: block;
+  margin: 0 auto;
+}
+
+.video {
+  margin: 0 25px;
+}
+
+.video h1 {
+  margin: 15px 0;
+  font-weight: 600;
+  color: #030303;
+  font-size: 18px;
+}
+
+.video p,
+.video li {
+  font-size: 14px;
+  color: #606060;
+  display: inline;
+}
+
+.social {
+  margin-left: auto;
+}
+
+.social ul li {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /* Aside main */
-
 aside {
-  margin: 70px 0;
-  min-height: 200px;
-  background-color: darkgreen;
+  background-color: brown;
+}
+/*Pills*/
+.pills {
+  height: 48px;
+}
+.pills a {
+  background-color: #ececec;
+  padding: 5px 12px;
+  margin: 12px 12px 12px 0;
+  min-width: 12px;
+  font-size: 14px;
+  border-radius: 16px;
 }
