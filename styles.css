@@ -56,9 +56,6 @@ table {
   display: flex;
 }
 /* Create three unequal columns that sits next to each other */
-.column {
-  height: 300px; /* Should be removed. Only for demonstration */
-}
 /* Right column */
 .column.side {
   -webkit-flex: 2;
@@ -77,6 +74,11 @@ table {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
+}
+/*General rules*/
+
+.container {
+  padding: 0 70px;
 }
 /**
 * Rules for header section
@@ -166,18 +168,21 @@ section,
 aside {
   padding: 20px 0;
   margin-top: 60px;
-  min-height: 1200px;
 }
 
 /* Section Main */
-section,
-aside {
+body {
   background-color: #f9f9f9;
 }
 
 /*Main*/
+
+.main {
+  padding: inherit 10px inherit 15px;
+}
+
 iframe {
-  width: 853px;
+  width: 753px;
   height: 480px;
   display: block;
   margin: 0 auto;
@@ -199,7 +204,8 @@ iframe {
 
 .video p,
 .video li,
-.underline {
+.underline,
+.thumb-p {
   font-size: 14px;
   color: #606060;
   display: inline;
@@ -265,15 +271,22 @@ iframe {
 }
 /* Aside main */
 
-/*Pills*/
-.pills {
-  height: 48px;
+/*Side preview*/
+/*Thumbnail*/
+.thumb {
+  height: fit-content;
+  margin: 5px 0;
 }
-.pills a {
-  background-color: #ececec;
-  padding: 5px 12px;
-  margin: 12px 12px 12px 0;
-  min-width: 12px;
-  font-size: 14px;
-  border-radius: 16px;
+
+.side img {
+  padding: 1px 15px;
+}
+
+.thumb-p {
+  display: block;
+  font-size: 12px;
+}
+
+.thumb-p svg {
+  color: #606060;
 }
