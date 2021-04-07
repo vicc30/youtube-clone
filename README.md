@@ -15,7 +15,7 @@ This is my solution to complete Youtube Project that is part of [Odin Project - 
 * [x] Next, build the sidebar section where previews of suggested videos show up. Obviously don’t worry about generating those previews… just grab some thumbnail-sized images and plug them in.
 * [x] Next, finish up by filling in some of the elements below the video – the title, description and number of views. Ignore the icons (many of them are produced using sprites or more advanced techniques so you won’t be able to just grab them by copying them).
 * [x] Push your solution up to GitHub.
-* [ ] EXTRA: Added icons: iconify - material design
+* [x] EXTRA: Added icons: iconify - material design
 
 ## Learning and Expected Outcomes
 
